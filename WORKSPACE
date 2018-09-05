@@ -19,7 +19,7 @@ load("@io_tweag_rules_nixpkgs//nixpkgs:nixpkgs.bzl", "nixpkgs_package")
 
 nixpkgs_package(
   name = "ghc",
-  # attribute_path = "haskell.compiler.ghc822",
+  repository = "//:nix/default.nix",
   nix_file = "//:ghcWithHmatrix.nix",
 )
 
